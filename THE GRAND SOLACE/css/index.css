@@ -1,0 +1,2528 @@
+/* --------------------TOP SIDE---------------------*/
+* {
+    box-sizing: border-box;
+    font-family: candara;
+}
+body
+{
+    margin: 0px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.breakShow{
+    display: none;
+}
+.roombooking select
+{
+    font-size: 18px;
+    padding:10px;
+    width:100%;
+}
+.align {
+    text-align: center;
+}
+.wrapper {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+body{
+    background-image: url(https://i.gifer.com/VhdJ.gif);
+}
+body{
+    background-image: url(https://i.gifer.com/xw.gif);
+}
+body{
+    background-color: white;
+    background-image: url(https://media.giphy.com/media/cPlsuCWPznPZ98kV2J/giphy.gif);
+}
+*/
+body {
+    background-color: white;
+}
+
+
+
+.logoName {
+    background-image: url(../images/logo11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 80px;
+    margin-left:47%;
+}
+#homeNav{
+    margin-left: 0px;
+}
+#contactNav{
+    margin-right: 0px;
+}
+.logo {
+    background-color: #c9985e;
+    height: 90px;
+    padding-top: 0px;
+    
+}
+
+header{
+    
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.imgClass nav {
+    display: flex;
+    height: 68px;
+    background-color: white;
+    margin: 0px;
+    position: fixed;
+    margin-left: 10%;
+    z-index: 999999;
+    box-shadow: 5px 0px 20px #555;
+}
+
+.imgClass nav a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size: 1em;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.navBarMenu{
+    padding-top: 20px;
+}
+
+.imgClass nav a img{
+    
+    padding-top: 0px;
+}
+
+.imgClass nav a:hover {
+
+    background-color: #c9985e;
+}
+.mediaQ{
+        display: none;
+}
+.wrapper2 {
+    top: 0;
+    box-sizing: border-box;
+    width: 80%;
+    position: fixed;
+}
+
+.heroImg2 {
+    min-height: 400px;
+    width: 100%;
+    background-color: gray;
+    background-image: url(../images/hero.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+#fullCheckIn {
+    display: flex;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    bottom: -50px;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type=button] {
+   width: 100%;
+   background-color: black;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+    font-size: 1em;
+}
+
+@media only screen and (max-width:1024px) {
+   .mediaQ{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    #fullCheckIn{
+        display: block;
+        position: static;
+        margin-top: 0px;
+        
+        width: 100%;
+    }
+    input{
+        display: block;
+    }
+    header{
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0px;
+    }
+    .imgClass{
+        display: none;
+    }
+    .mediaQ{
+        display: block;
+        margin: 0px;
+    }
+   
+    #myModal{
+        display: none;
+    }
+    .no{
+    }
+    .mediaQ{
+        width: 100%;
+    }
+    .mediaQ nav a{
+        display: block;
+        text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+    }
+    .mediaQ nav a:hover{
+         background-color: #c9985e;
+    }
+    .roombooking select{
+        width: 100%;
+    }
+    .logo{
+    }
+    nav a{
+    }
+}
+
+
+
+
+
+
+
+/*--------------MAIN BODY-----------------*/
+
+
+main:hover{
+    cursor: auto;
+}
+.heroImg {
+    min-height: 700px;
+    width: 100%;
+    background-color: gray;
+    background-image: url(../images/hero.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.imgClass{
+    position: relative;
+}
+
+.aboutHotelText {
+    display: none;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    width: auto;
+    height: 500px;
+    background-image: url(../images/wine2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+
+.roomDescrip {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    background-color: transparent;
+    text-align: center;
+
+
+}
+
+.room {
+
+    min-height: 500px;
+    width: 40%;
+    flex: 1;
+    overflow: hidden;
+    background-image: url(../images/heroRoom2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.descrip {
+    width: 40%;
+    flex: 1;
+    background-color: white;
+}
+
+
+.dealPackage {
+    display: flex;
+    min-height: 500px;
+    background-color: #d6192b;
+    justify-content: center;
+    background-image: url(https://media.giphy.com/media/cPlsuCWPznPZ98kV2J/giphy.gif);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+
+}
+
+.hat {
+    position: absolute;
+    right: -38px;
+    top: -40px;
+    background-image: url(../images/hat.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}
+
+.deal {
+    flex-basis: 45%;
+    background-color: black;
+    margin: 20px;
+    box-sizing: border-box;
+    background-image: url(../images/deal3.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.deal:hover {
+    margin: 10px;
+    flex-basis: 50%;
+    transition: margin .5s, flex-basis .5s;
+
+}
+
+.package {
+    flex-basis: 45%;
+    background-color: black;
+    margin: 20px;
+
+    background-image: url(../images/package.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.package:hover {
+    margin: 10px;
+    flex-basis: 50%;
+    transition: margin .5s, flex-basis .5s;
+
+}
+
+.imageTextBox{
+    display: flex;
+    height: 488px;
+    position: relative;
+    margin: 15px;
+}
+.image{
+    flex: 2.5;
+    background-color: black;
+    width: 100%;
+}
+.blankImage{
+    flex: 1;
+    background-color: white;
+}
+.textBox{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    border: 5.5px double #c9985e;
+    margin: 15px;
+    text-align: left;
+    padding-left: 33px;
+    margin-left: 2px;
+}
+.textBox:hover{
+    
+    cursor: pointer;
+  animation-name: flashing_border;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+}
+@keyframes flashing_border {
+  
+    0%{
+        
+    border-color: #c9985e;
+    }
+    25%{
+        
+    border-color: black;
+    }
+    50%{
+        
+    border-color: black;
+    }
+    75%{
+        
+    border-color: white;
+    }
+    100%{
+        
+    border-color: #c9985e;
+    }
+}
+
+
+.textBox2{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    border: 5px double  #c9985e;
+    padding-left: 33px;
+    margin: 15px;
+    margin-left: 2px;
+    text-align: left;
+}
+.textBox2:hover{
+    
+    cursor: pointer;
+  animation-name: flashing_border;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+}
+@keyframes flashing_border {
+  
+    0%{
+        
+    border-color: #c9985e;
+    }
+    25%{
+        
+    border-color: black;
+    }
+    50%{
+        
+    border-color: black;
+    }
+    75%{
+        
+    border-color: white;
+    }
+    100%{
+        
+    border-color: #c9985e;
+    }
+}
+#roomImage{
+    background-image: url(../images/balcony.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#diningImage{
+    background-image: url(../images/dining2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#eventImage{
+    background-image: url(../images/eventshero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1024px) {
+    .imageTextBox{
+        display: block;
+        position: static;
+        height: auto;
+    }
+    .textBox{
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+    }
+    .blankImage{
+        display: none;
+    }
+    .image{
+        width: 100%;
+        height: 488px;
+    }
+    .textBox2{
+        
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+    }
+    
+    .dealPackage{
+        display: block;
+    min-height: 488px;
+    background-color: #d6192b;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    }
+    .package{
+        display: none;
+    }
+    .deal{
+        height: 488px;
+        margin: 0px;
+    }
+    
+}
+.showSmall{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .heroImg{
+        
+        background-position: center;
+    }
+    .hat{
+        display: none;
+    }
+    header{
+        margin-bottom: 0px;
+    }
+    .showSmall{
+        display: block;
+        width: 100%;
+    }
+    .dealPackage{
+        display: none;
+    }
+}
+
+
+/*---------------------------------------------------------HOTEL ROOMS--------------------------------------------------------------------------------------------------*/
+
+#bookHero{
+    background-image: url(../images/master.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#infoRoomPic {
+    display: flex;
+    background-color: #fbf1de;
+}
+
+#infoRoom {
+    flex: 1;
+    background-color: #fbf1de;
+   padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+    
+}
+#roomPic{
+     flex: 1;
+    background-image: url(../images/kingDeluxe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 10px;
+    min-height: 500px;
+}
+
+
+#infoRoom h1 {
+    text-align: center;
+}
+
+#checkInOut {
+    display: flex;
+    border: 0;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+#checkIn {
+    flex: 1;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#checkOut {
+    flex: 1;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.checkText {
+    background-color: transparent;
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.check {
+    background-color: transparent;
+    text-align: center;
+}
+
+.clock {
+    background-image: url(../images/clock3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+input[type=submit]:hover {
+   background-color: #c9985e;
+}
+
+#roomType {
+    flex: 1;
+    border-right: 1px solid white;
+}
+
+#adult {
+    flex: 1;
+
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+#adult option {
+    text-align: center;
+}
+
+#child {
+    flex: 1;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+#checkAvailability {
+    flex: 1;
+    text-align: center;
+    background-color: #fbf1de;
+    color: black;
+}
+#checkAvailability:hover{
+    
+   background-color: #c9985e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#filterSuiteRoom {
+    margin-top: 20px;
+    margin-bottom: 42px;
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+
+#room:hover {
+    cursor: pointer;
+}
+
+#suite:hover {
+    cursor: pointer;
+}
+
+.diamond {
+    position: absolute;
+    background-image: url(../images/diamond2.png);
+    background-size: cover;
+    bottom: -40px;
+    left: 47%;
+    height: 40px;
+    width: 40px;
+}
+
+.upSideDown {
+    position: relative;
+}
+
+.upSideDown p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.upSideDown ul {
+    display: none;
+}
+
+.diamondUpSideDown {
+    position: absolute;
+    background-image: url(../images/diamond3.png);
+    background-size: cover;
+    top: 5px;
+    left: 70px;
+    height: 15px;
+    width: 15px;
+}
+
+#filter {
+    display: none;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+#suite {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+#room {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    background-color: #fbf1de;
+}
+
+#allRooms {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+}
+
+
+#kingDeluxePic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/kingDeluxe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#kingDeluxeInfo{
+   border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+
+#queenDeluxePic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/queenDeluxe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#queenDeluxeInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+
+
+#twinDeluxePic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/TwinDeluxe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#twinDeluxeInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+#kingPic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/king.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#kingInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+
+
+#queenPic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/queen2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#queenInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+
+
+#twinPic {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/Twin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#twinInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+#allSuites {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    display: none;
+}
+
+#masterSuitePic {
+    background-image: url(../images/master.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+#masterSuiteInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+#miniSuitePic {
+    background-image: url(../images/mini.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+#miniSuiteInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+#balconySuitePic {
+    background-image: url(../images/balcony.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+#balconySuiteInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+   padding: 10px;
+    font-size: 1.1em;
+}
+#executiveSuitePic {
+    background-image: url(../images/executive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+#executiveSuiteInfo{
+    border-radius: 5px;
+   background-color: #fbf1de;
+    background-repeat: no-repeat;
+    background-position: center;
+   padding: 10px;
+    font-size: 1.1em;
+}
+
+.showMedia{
+    display: none;
+}
+.showImageRoomSmall{
+    display: none;
+}
+
+
+@media only screen and (max-width:1024px) {
+    #allRooms{
+        display: block !important;
+    }
+    
+    #infoRoomPic{
+    
+        display: block !important;
+    }
+    #allSuites{
+        display: block !important;
+    }
+    .showMedia{
+    display: block;
+        text-align: center;
+        background-color: black;
+        color: white;
+        
+    }
+    #filterSuiteRoom{
+        display: none;
+    }
+    #infoRoomPic{
+        display: block;
+    }
+    #checkInOut{
+        display: none;
+    }
+   
+    
+    #bookHero{
+        background-size: contain;
+        min-height: 500px;
+        min-width: 100%;
+    }
+    .diamond{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+        #bookHero{
+        background-image: url(../images/master.jpg);
+        background-size: cover;
+        max-height: 400px;
+        width: 100%;
+            
+        }
+    .diamond{
+        display: none;
+    }
+    .align{
+        display: none;
+    }
+    #roomPic{
+        display: none;
+    }
+    #miniSuitePic{
+        background-size: contain;
+        min-height: 200px;
+    }
+    
+    .showImageRoomSmall{
+    display: block;
+        width: 100%;
+        }
+    .hideImageSmall{
+        display: none;
+    }
+}
+
+/*---------------------------------Events-----------------------------------*/
+ 
+.eventhero {
+    background-image: url(../images/bouquet-1854074_1920.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#christmasEvent {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 450px;
+    width: 800px;
+    box-sizing: border-box;
+    background-image: url(../images/christmasParty.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.dealPackageChristmas {
+    display: block;
+    margin-top: 20px;
+    background-color: #d6192b;
+    justify-content: center;
+    background-image: url(https://media.giphy.com/media/cPlsuCWPznPZ98kV2J/giphy.gif);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+#christmasText {
+    width: auto;
+    text-align: center;
+    font-family: 'Courgette';
+    font-size: 2.5em;
+    padding-top: 10px;
+    color: white;
+}
+
+.button {
+    background-color: darkgreen;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 19px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid black;
+}
+
+#wedding {
+    display: flex;
+    /*    height: 444px;*/
+    background-color: #fbf1de;
+    width: auto;
+    margin-top: 40px;
+}
+
+#weddingImg {
+    background-image: url(../images/weddingImg.jpg);
+    background-size: contain;
+    width: auto;
+    margin: 20px;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+    margin-left: 20px;
+}
+
+#weddingText {
+    flex-basis: 60%;
+    color: #c9985e;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 385px;
+    font-size: 1.5em;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: justify;
+}
+
+span {
+    font-size: 2.0em;
+    color: black;
+}
+
+#party {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    border: 3px double grey;
+}
+
+#partyImg {
+    background-image: url(../images/concert.jpg);
+    background-size: contain;
+    height: 400px;
+    width: auto;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin-left: 20px;
+}
+
+#partyText {
+    flex: 1;
+    color: black;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-left: 10px;
+    padding-top: 85px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+    background-color: #fbf1de;
+}
+
+#meetings {
+    background-image: url(../images/meeting3.jpg);
+    display: block;
+    height: 400px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+#meetingText {
+    flex: 1;
+    color: black;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#meetingGrid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 20px;
+    color: black;
+    background-color: #c9985e;
+}
+
+////////////////////////////////////
+.containerEvent {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.c1 {
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+
+.c2 {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 120px 0;
+    margin: 0px;
+    background-color: #8fbbd9;
+    margin-bottom: 10px;
+
+}
+
+.c3 {
+    display: inline-block;
+    float: left;
+    font-size: 1.3em;
+    width: 50%;
+    text-align: center;
+    padding: 120px 0;
+    background-color: #7ed9a7;
+    margin-bottom: 10px;
+}
+
+.mainCol {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    justify-content: space-between;
+}
+
+.c4 {
+
+
+    font-size: 1.3em;
+    text-align: center;
+    min-height: 285px;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.c5 {
+
+
+    font-size: 1.3em;
+    text-align: center;
+    min-height: 285px;
+    padding-top: 50px;
+    background-color: white;
+    border: 2px solid #c9985e;
+    margin-bottom: 10px;
+    margin-right: 7px;
+    margin-left: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.c6 {
+
+
+    font-size: 1.3em;
+    min-height: 285px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+    .eventhero {
+        display: block;
+    }
+
+    #meetingText {
+        display: block;
+    }
+
+    .c1 {
+        display: none;
+    }
+
+    .dealPackageChristmas {
+        display: block;
+    }
+
+    #christmasEvent {
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(../images/christmasParty.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    #party {
+        display: block;
+        width: 100%;
+    }
+
+    #wedding {
+        display: block
+    }
+
+    #weddingText {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .mainCol {
+        display: block;
+    }
+    .eventhero {
+        display: block;
+    }
+
+    #meetingText {
+        display: block;
+    }
+
+    .c1 {
+        display: none;
+    }
+}
+
+/* Collapse to full width column */
+
+@media only screen and (max-width: 768px) {
+    .c4 {
+        width: 100%;
+    }
+
+    .c5 {
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    .c6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .c2 {
+        width: 100%;
+    }
+
+    .c3 {
+        width: 100%;
+    }
+}
+
+
+/*---------old-------------*/
+.one {
+    margin-top: 10px;
+    height: 450px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#oneleft {
+    background-image: url(../images/partyevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#oneright {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+/*----------------------------------------------*/
+.two {
+    margin-top: 10px;
+    height: 500px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#twoleft {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+#tworight {
+    background-image: url(../images/eventshero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+/*----------------------------------------------*/
+.three {
+    margin-top: 10px;
+    height: 450px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#threeleft {
+    background-image: url(../images/meetingevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#threeright {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+/*----------------------------------------------*/
+#paratext {
+    font-family: candara;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#heroimgevent {
+    height: 550px;
+    width: auto;
+    background-image: url(../images/eventhero.png);
+    background-position: 100% 46%;
+    background-repeat: no-repeat;
+}
+
+/*---------------------------form-------------------------------------*/
+#formone {
+    display: flex;
+}
+
+#formone select {
+    flex: 1;
+}
+
+#formone input {
+    flex: 1;
+}
+
+#formtwo {
+    display: flex;
+}
+
+#formtwo select {
+    flex: 1;
+}
+
+#formtwo input {
+    flex: 1;
+}
+
+#eventForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c9985e;
+}
+
+/*-------------Intro---------------*/
+#intro {
+    height: 100px;
+    width: auto;
+    background-color: black;
+    font-family:'Arizonia', Helvetica, sans-serif;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 10px;
+    color: #fbf1de;
+}
+
+/*--------------------------------------------------------------*/
+.one {
+    margin-top: 10px;
+    height: 450px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#oneleft {
+    background-image: url(../images/partyevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#oneright {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+/*----------------------------------------------*/
+.two {
+    margin-top: 10px;
+    height: 500px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#twoleft {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+#tworight {
+    background-image: url(../images/eventshero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+/*----------------------------------------------*/
+.three {
+    margin-top: 10px;
+    height: 450px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#threeleft {
+    background-image: url(../images/meetingevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#threeright {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+/*----------------------------------------------*/
+#paratext {
+    font-family: candara;
+    font-size: 4.0em;
+    margin-left: 10px;
+}
+
+#paradetails {
+    font-family: candara;
+    font-size: 1.5em;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+
+
+
+/*===========================================contact page=====================================================*/
+
+
+.contacthero {
+    background-image: url(../images/contactus.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactblock h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #c9985e;
+    font-family: verdana;
+    font-weight: 100;
+
+}
+
+.contactblock h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    font-family: verdana;
+    font-weight: 100;
+
+}
+
+
+.contactdetails {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+
+}
+
+.contactinfo {
+    background-color: #fbf1de;
+    padding: 20px;
+}
+
+.contactinfo ul {
+    padding: 0px;
+}
+
+.contactinfo ul li {
+    list-style: none;
+    line-height: 35px;
+    font-size: 22px;
+}
+
+.contactinfo ul li span {
+    list-style: none;
+    line-height: 22px;
+    font-size: 22px;
+    padding-left: 50px;
+}
+
+.contactfeedback input {
+
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #000;
+
+}
+
+.contactfeedback textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 18px;
+    color: #000;
+    min-height: 150px;
+    border-color: #000;
+}
+
+.contactfeedback span {
+    color: #f00;
+}
+
+.contactfeedback button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.contactfeedback button:hover {
+    background-color: #c9985e;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.contactmap {
+    margin: 20px 0px;
+}
+
+.roombooking input {
+    min-width: 50%;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.roombooking label {
+    font-size: 18px;
+    padding: 5px;
+
+}
+
+.roombooking button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.roombooking button:hover {
+    background-color: #c9985e;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.roombooking span {
+    color: #f00;
+}
+
+.datep {
+    width: 40%;
+}
+
+@media only screen and (max-width:1024px) {
+    .contactdetails {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .contactdetails {
+        display: block;
+    }
+
+}
+
+
+/*---------------------------------------------------MODAL CONTENT----------------------------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*----------------------------------------------FOOTER------------------------------------------------*/
+
+footer {
+   padding: 7px;
+   background-color: black;
+   color: white;
+   font-size: 1.2em;
+   margin-top: 10px;
+}
+.footerContainer{
+    display: flex;
+    color: white;
+}
+.footer1{
+    flex: 1;
+}
+a{
+    text-decoration: none;
+}
+.footer1 li{
+    
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer1 a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#footDown{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#footDown a{
+    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+#footDown a:hover{
+    text-decoration: underline;
+}
+#socialTab{
+        display: none;
+    }
+@media only screen and (max-width:1024px) {
+    #social{
+        display: none;
+    }
+    #socialTab{
+        display: inline-block;
+        margin-left: 40%;
+        
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    .footerContainer{
+        display: block;
+        text-align: center;
+    }
+    #footDown a{
+        display: block;
+        text-align: center;
+    }
+    #socialTab{
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+    }
+    footer{
+        margin-top: 0px;
+    }
+}
+
+
+/*-----------------------------------------------deals-------------------------------------------------*/
+/*-----------------------------------------------deals-------------------------------------------------*/
+
+.dealhero {
+    background-image: url(../images/dealandpackage.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.maindeals {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+
+}
+.deals1
+{
+    padding: 0px 20px;
+}
+.deals1 img {
+    width: 100%;
+    
+}
+
+.deals1 h1 {
+    font-size: 40px;
+    color: #c9985e;
+}
+
+.deals1 a {
+    color: #c9985e;
+    font-size: 18px;
+}
+
+.deals1 h2 {
+    font-size: 25px;
+    margin: 10px 0px;
+
+}
+
+.deals1 h3 {
+    font-size: 18px;
+    margin: 10px 0px;
+    font-style: italic;
+}
+
+.deals2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 0px 10px 10px 10px;
+}
+
+.deals2 h1 {
+    font-size: 40px;
+    color: #c9985e;
+}
+
+.deals2 a {
+    color: #c9985e;
+    font-size: 18px;
+}
+
+.deals2 h2 {
+    font-size: 25px;
+    margin: 10px 0px;
+
+}
+
+.deals2 h3 {
+    font-size: 18px;
+    margin: 10px 0px;
+    font-style: italic;
+}
+
+.deals2 img {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.deals2 .otherdeals {
+    padding: 20px;
+}
+
+
+.deals1 img:hover {
+    transform: scale(1.05);
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.deals2 img:hover {
+    transform: scale(1.15);
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+@media only screen and (max-width:1024px) {
+    .deals2 {
+        display: block;
+    }
+
+    .maindeals {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .deals2 {
+        display: block;
+
+    }
+
+    .maindeals {
+        display: block;
+    }
+}
+
+
+
+
+
+#tableMenu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+caption {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    background-color: #fbf1de;
+    margin-bottom: 15px;
+    border: 0.9px solid black;
+}
+
+#tableText {
+    margin-top: 10px;
+    font-size: 2.2em;
+    background-color: #c9985e;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: 8px double #fbf1de;
+}
+
+#tableOne {
+    padding: 10px;
+}
+
+#tableTwo {
+    padding: 10px;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #f2f2f2;
+}
+
+th {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    #tableMenu {
+        display: block;
+    }
+
+    caption {
+        display: block;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+
+        color: #000;
+        font-weight: bold;
+    }
+
+}
+
+.dininghero {
+    background-image: url(../images/dining%20and%20bar.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#diningtext {
+    background-color: #fbf1de;
+    color: black;
+    width: auto;
+}
+
+#diningHeading {
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#diningDetails {
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#paratextDining {
+    font-family: candara;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#paratextDetailDining {
+    padding-left: 20px;
+    font-size: 1.4em;
+    color: #c9985e;
+}
+
+#paratextDetailCustomise {
+    padding: 10px;
+    font-size: 1 em;
+    color: #c9985e;
+}
+
+#spancust {
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.7em;
+}
+
+.oneDining {
+    margin-top: 10px;
+    width: auto;
+    background-color: #fbf1de;
+    display: flex;
+    justify-content: space-between;
+}
+
+#oneleftDining {
+    background-image: url(../images/partyevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#onerightDining {
+    background-color: white;
+    flex-basis: 58%;
+    border: 8px double #c9985e;
+    margin: 20px;
+}
+
+/*----------------------------------------------*/
+.twoDining {
+    margin-top: 10px;
+    width: auto;
+    background-color: #fbf1de;
+    display: flex;
+    justify-content: space-between;
+}
+
+#twoleftDining {
+    background-color: white;
+    flex-basis: 58%;
+    border: 8px double #c9985e;
+    margin: 20px;
+}
+
+#tworightDining {
+    background-image: url(../images/eventshero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+/*----------------------------------------------*/
+.threeDining {
+    margin-top: 10px;
+    height: 450px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#threeleftDining {
+    background-image: url(../images/meetingevent.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+}
+
+#threerightDining {
+    background-color: #fbf1de;
+    flex-basis: 58%;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: black;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+/* brown button */
+.contactbtn {
+    border: 2px solid black;
+    background-color: black;
+    padding: 1px 16px;
+    cursor: pointer;
+    border-color: #c9985e;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 43%;
+}
+
+.contactbtn:hover {
+    background: #c9985e;
+    color: white;
+}
+
+#customizeDiv {
+    background-color: black;
+    font-size: 21pt;
+    height: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+#customize {
+    font-size: 2.5em;
+    padding-top: 20px;
+    background-color: #fbf1de;
+    margin-top: 10px;
+}
+
+/*--------------Image overlay---------------*/
+.containerfade {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageEvent123 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lightgrey;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+
+.container:hover .overlay {
+    width: 100%;
+}
+
+.text {
+    color: black;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------------fade overlay------------------*/
+.container {
+    position: relative;
+    width: 50%;
+    flex-basis: 58%;
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+@media only screen and (max-width:1024px) {
+    .dininghero {
+        display: block;
+    }
+
+    #tableMenu {
+        display: block;
+    }
+
+    #diningtext {
+        display: block;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    #diningDetails {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .oneDining {
+        display: block;
+    }
+
+
+    .container {
+        background-color: #fbf1de;
+        display: none;
+    }
+
+    #onerightDining {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #paratextDining {
+        font-size: 35px;
+    }
+
+    #twoleftDining {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .content {
+        display: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width:768px) {
+    .dininghero {
+        display: block;
+    }
+
+    #diningtext {
+        display: block;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    #diningDetails {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .oneDining {
+        display: block;
+        height: 300px;
+    }
+
+
+    .container {
+        background-color: #fbf1de;
+        display: none;
+    }
+
+    #onerightDining {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #paratextDining {
+        font-size: 35px;
+    }
+
+    #twoleftDining {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .content {
+        display: none;
+    }
+
+}
+

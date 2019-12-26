@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!---------------------------------------------------------------------------CREATED BY NILOY------------------------------------------------------->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Grand Solace offers wide range of facilities for planning meeting,parties and weddings.">
+    <title>The Grand Solace : Events</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="imgClass">
+           <nav class="wrapper2">
+                <a href="index.html" id="homeNav" class="navBarMenu">Home</a>
+                <a href="rooms.html" class="navBarMenu">Rooms & Suits</a>
+                <a href="events.html" class="navBarMenu">Events</a>
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="dining.html" class="navBarMenu">Dining</a>
+                <a href="deals.html" class="navBarMenu">Deals & Packages</a>
+                <a href="contact.html" id="contactNav" class="navBarMenu">Contact</a>
+            </nav>
+            <div class="eventhero"></div>
+
+        </div>
+
+        <div class="mediaQ">
+           <nav>
+
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suits</a>
+                <a href="events.html">Events</a>
+                <a href="dining.html">Dining</a>
+                <a href="deals.html">Deals & Packages</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="eventhero"></div>
+        </div>
+
+        <form id="fullCheckIn" action="" class="no">
+            <select id="roomType">
+                <option value="">Select Your Room</option>
+                <option value="King">King</option>
+                <option value="Queen">Queen</option>
+                <option value="Twin">Twin</option>
+                <hr>
+                <hr>
+
+                <option value="King Deluxe">King Deluxe</option>
+                <option value="Queen Deluxe">Queen Deluxe</option>
+                <option value="Twin Deluxe">Twin Deluxe</option>
+            </select>
+            <select id="adult">
+                <option value="">Adults</option>
+                <option value="oneAdult">1</option>
+                <option value="twoAdult">2</option>
+                <option value="threeAdult">3</option>
+                <option value="fourAdult">4</option>
+                <option value="fiveAdult">5</option>
+                <option value="sixAdult">6</option>
+            </select>
+            <select id="child">
+                <option value="">Children</option>
+                <option value="oneChild">1</option>
+                <option value="twoChild">2</option>
+                <option value="threeChild">3</option>
+                <option value="fourChild">4</option>
+            </select>
+            <input type="button" id="checkAvailability" value="Check Availability">
+
+        </form>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <div class="roombooking">
+                    <h1>Book Your Rooms</h1>
+
+
+                    <center>
+                        <div> <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                            <span></span>
+                            <input type="text" name="email" id="email" placeholder="Email Id">
+                            <span></span>
+                        </div>
+                        <br>
+                        <div>
+                            <label> Adult(s) :</label>
+                            <select name="adult" id="adultBook" required>
+                                <option value="">Adults</option>
+                                <option value="oneAdult">1</option>
+                                <option value="twoAdult">2</option>
+                                <option value="threeAdult">3</option>
+                                <option value="fourAdult">4</option>
+                                <option value="fiveAdult">5</option>
+                                <option value="sixAdult">6</option>
+                            </select>
+                            <label> Children :</label>
+                            <select name="child" class="childBook" required>
+                                <option value="">Children</option>
+                                <option value="oneChild">1</option>
+                                <option value="twoChild">2</option>
+                                <option value="threeChild">3</option>
+                                <option value="fourChild">4</option>
+                            </select>
+                            <label> Room Type :</label>
+                            <select name="roomtype" id="roomtypeBook" required>
+                                <option value="">Room</option>
+                                <option value="King">King</option>
+                                <option value="Queen">Queen</option>
+                                <option value="Twin">Twin</option>
+                                <hr>
+                                <hr>
+
+                                <option value="King Deluxe">King Deluxe</option>
+                                <option value="Queen Deluxe">Queen Deluxe</option>
+                                <option value="Twin Deluxe">Twin Deluxe</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="date" id="datepicker1" class="datep" placeholder="Select your check-in date">
+                            <input type="date" id="datepicker2" class="datep" placeholder="Select your check-out date">
+                        </div>
+                        <button type="submit" name="booknow" id="booknow">Book Now</button>
+                        <br>
+                        <br>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="dealPackageChristmas">
+
+            <div id="christmasText">Book for your Christmas Party NOW!</div>
+
+            <div id=christmasEvent></div>
+            <button class="button button3">Contact Event Planner</button>
+        </div>
+
+        <div id="wedding">
+            <div id="weddingImg"></div>
+            <div id="weddingText"><span>Weddings</span><br><br>
+                You said “yes” and now you are looking for that special place to celebrate your magical day. Hotel weddings can be a great alternative to having everything you need in one place and not worrying about all the details.
+                Celebrate flavor. Celebrate life. Celebrate with us.
+            </div>
+        </div>
+        <hr>
+        <!--        <div id="meetings"></div>-->
+        <div id="meetingText"><span>Meetings and Conferences</span><br>Even in the smallest of spaces, our expert staff can create endless possibilities.</div>
+        <div class="containerEvent">
+            <div class="c1"><img src="images/meeting2.png" alt="deal image" height="450px" width="80%"></div>
+
+            <div class="mainCol">
+                <div class="c4"><strong>Flexible Spaces</strong><br>Choose the right venue, from wide selection of versatile spaces in properties ranging from the ultimate in luxury to the ultimate in convenience. </div>
+                <div class="c5"><strong>Large Mettings</strong><br>
+                    Enjoy the flexibility of having space that accommodate the needs of larger groups.</div>
+                <div class="c6"><strong>Conventions</strong><br>Consider our convention spaces your blank canvas. We'll help you create an experience that is just right for your guests. </div>
+            </div>
+        </div>
+
+        <div id="party">
+            <div id="partyImg"></div>
+            <div id="partyText"><span>Book your Tickets for CONCERT</span><br><br>
+                Getting bored with life? Enjoy the concerts at "Solace Concert Ground". Contact us now to grab your passes. Meet your favourite singers and bands play live.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <ul class="footer1">
+            <a href="">
+                <li>About Us</li>
+            </a>
+            <a href="">
+                <li>Careers</li>
+            </a>
+            <a href="">
+                <li>Contact Us</li>
+            </a>
+            <a href="">
+                <li>Travel Advisor</li>
+            </a>
+            <a href="">
+                <li>Customer Service</li>
+            </a>
+        </ul>
+        <ul class="footer1">
+            <a href="">
+                <li>FAQs</li>
+            </a>
+            <a href="">
+                <li>Media Partners</li>
+            </a>
+            <a href="">
+                <li>News</li>
+            </a>
+            <a href="">
+                <li>Connections</li>
+            </a>
+        </ul>
+        <ul class="footer1">
+            <a href="">
+                <li>Our Sponsors</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+            <a href="">
+                <li>Developers</li>
+            </a>
+            <a href="">
+                <li>Investors</li>
+            </a>
+            <a href="">
+                <li>Activities</li>
+            </a>
+            <a href="">
+                <li>Gift Card</li>
+            </a>
+        </ul>
+        <div class="footer1" id="social">
+            <h3>Join Us for More Info</h3>
+            <div id="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+            </div>
+            <h5>&copy; 2019 The Grand Solace</h5>
+        </div>
+
+
+    </div>
+    <div id="socialTab">
+        <h3>Join Us for More Info</h3>
+        <div id="socialTabShow">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+        </div>
+        <h5>&copy; 2019 The Grand Solace</h5>
+    </div>
+    <hr>
+    <div id="footDown">
+
+        <a href="#"> Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookies</a>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!---------------------------------------------------------------------------CREATED BY NILOY------------------------------------------------------->
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Our hotel offers lusxurious rooms & suites for discerning guests, luxurious bathroom and amenities. Book now.">
+    <title>The Royal Solace : Rooms</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/index.js"></script>
+
+
+</head>
+
+<body >
+
+      <header>
+        
+        <div class="imgClass">
+           <nav class="wrapper2">
+                <a href="index.html" id="homeNav" class="navBarMenu">Home</a>
+                <a href="rooms.html" class="navBarMenu">Rooms & Suits</a>
+                <a href="events.html" class="navBarMenu">Events</a>
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="dining.html" class="navBarMenu">Dining</a>
+                <a href="deals.html" class="navBarMenu">Deals & Packages</a>
+                <a href="contact.html" id="contactNav" class="navBarMenu">Contact</a>
+            </nav>
+            <div id="bookHero"></div>
+            
+        </div>
+        
+        <div class="mediaQ">
+           <nav>
+
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suits</a>
+                <a href="events.html">Events</a>
+                <a href="dining.html">Dining</a>
+                <a href="deals.html">Deals & Packages</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div id="bookHero"></div>
+        </div>
+        
+        <form id="fullCheckIn" action="" class="no">
+                <select id="roomType">
+                    <option value="">Select Your Room</option>
+                    <option value="King">King</option>
+                    <option value="Queen">Queen</option>
+                    <option value="Twin">Twin</option>
+                    <hr>
+                    <hr>
+
+                    <option value="King Deluxe">King Deluxe</option>
+                    <option value="Queen Deluxe">Queen Deluxe</option>
+                    <option value="Twin Deluxe">Twin Deluxe</option>
+                </select>
+                <select id="adult" >
+                    <option value="">Adults</option>
+                    <option value="oneAdult">1</option>
+                    <option value="twoAdult">2</option>
+                    <option value="threeAdult">3</option>
+                    <option value="fourAdult">4</option>
+                    <option value="fiveAdult">5</option>
+                    <option value="sixAdult">6</option>
+                </select>
+                <select id="child" >
+                    <option value="">Children</option>
+                    <option value="oneChild">1</option>
+                    <option value="twoChild">2</option>
+                    <option value="threeChild">3</option>
+                    <option value="fourChild">4</option>
+                </select>
+                <input type="button" id="checkAvailability" value="Check Availability">
+
+            </form>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                 <div class="roombooking">
+                <h1>Book Your Rooms</h1>
+
+
+                <center>
+                    <div> <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                        <span></span>
+                        <input type="text" name="email" id="email" placeholder="Email Id">
+                        <span></span>
+                    </div>
+                    <br>
+                    <div>
+                        <label> Adult(s) :</label>
+                        <select name="adult" id="adultBook" required>
+                            <option value="">Adults</option>
+                            <option value="oneAdult">1</option>
+                            <option value="twoAdult">2</option>
+                            <option value="threeAdult">3</option>
+                            <option value="fourAdult">4</option>
+                            <option value="fiveAdult">5</option>
+                            <option value="sixAdult">6</option>
+                        </select>
+                        <label> Children :</label>
+                        <select name="child" class="childBook" required>
+                            <option value="">Children</option>
+                            <option value="oneChild">1</option>
+                            <option value="twoChild">2</option>
+                            <option value="threeChild">3</option>
+                            <option value="fourChild">4</option>
+                        </select>
+                        <label> Room Type :</label>
+                        <select name="roomtype" id="roomtypeBook" required>
+                            <option value="">Room</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
+                            <option value="Twin">Twin</option>
+                            <hr>
+                            <hr>
+
+                            <option value="King Deluxe">King Deluxe</option>
+                            <option value="Queen Deluxe">Queen Deluxe</option>
+                            <option value="Twin Deluxe">Twin Deluxe</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="date" id="datepicker1" class="datep" placeholder="Select your check-in date">
+                        <input type="date" id="datepicker2" class="datep" placeholder="Select your check-out date">
+                    </div>
+                    <button type="submit" name="booknow" id="booknow">Book Now</button>
+                    <br>
+                    <br>
+                </center>
+            </div>
+            </div></div>
+    </header>
+
+    <main>
+
+        <!-- The Modal -->
+        
+
+        <div class="wrapper">
+            <div id="infoRoomPic">
+                <div id="infoRoom">
+                    <h1>A Premium Retreat</h1>
+                    <p>
+                        With over 500 well-appointed highly furnished guestrooms,Hotel Grand Solace is City's one of the largest hotels.Modern deluxe amenities make each stay extraordinary, including bathrooms with walk-in showers, and rooms filled with business-focused amenities and comfortable workstations. All guests can enjoy the modern convenience of complimentary high speed Wi-Fi during your stay with us.
+                    </p>
+                    <div id="checkInOut">
+                        <div id="checkIn">
+                            <div class="clock"></div>
+                            <div class="check checkText">
+                                <h3>Check In</h3>
+                                <p>11 AM</p>
+                            </div>
+                        </div>
+                        <div id="checkOut">
+                            <div class="clock"></div>
+                            <div class="check checkText">
+                                <h3>Check Out</h3>
+                                <p>3 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="roomPic"></div>
+            </div>
+            <h1 class="align">SEIZE YOUR STAY WITH US</h1>
+
+            
+            
+            <div id="filterSuiteRoom">
+
+
+                <div id="room">
+
+                    <div class="diamond"></div>
+                    <p id="roomClick">Room</p>
+                </div>
+                <div id="suite">
+
+                    <div class="diamond"></div>
+                    <p id="suiteClick">Suite</p>
+                </div>
+
+            </div>
+            
+            
+            <div class="showMedia">
+
+                    <div class="diamond"></div>
+                    <h1 >Rooms</h1>
+            </div>
+            <hr>
+            <div id="allRooms">
+
+                <div id="kingDeluxe">
+                    <img src="images/kingDeluxe2.jpg" class="showImageRoomSmall" alt="King Deluxe Room">
+                    <div id="kingDeluxePic" class="hideImageSmall"></div>
+                    <div id="kingDeluxeInfo">
+                        <h3>1 KING BED DELUXE</h3>
+                        This contemporary room with with 29 - 30 sq m of space offers one king bed, a spacious work station and walk-in shower.
+                        <div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Iron and ironing board</li>
+                                <li>Hair dryer</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="queenDeluxe">
+                    <img src="images/queenDeluxe2.jpg" class="showImageRoomSmall" alt="Queen Deluxe Room">
+                    <div id="queenDeluxePic" class="hideImageSmall"></div>
+                    <div id="queenDeluxeInfo">
+                        <h3>1 QUEEN BED DELUXE</h3>
+                        The room features bathrooms with walk-in showers, spacious workspaces, and modern décor amid 25 - 28 sq m of space.
+                        <div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Iron and ironing board</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="twinDeluxe">
+                    <img src="images/TwinDeluxe2.jpg" class="showImageRoomSmall" alt="Twin Deluxe Room">
+                    
+                    <div id="twinDeluxePic" class="hideImageSmall"></div>
+                    <div id="twinDeluxeInfo">
+                        <h3>2 TWIN BED DELUXE</h3>
+                        This contemporary room with modern finishes offers one king bed, a spacious work station and walk-in shower.<div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="king">
+                    <img src="images/king2.jpg" class="showImageRoomSmall" alt="King Room">
+                    <div id="kingPic" class="hideImageSmall"></div>
+                    <div id="kingInfo">
+                        <h3>1 KING BED</h3>
+                        This contemporary room with modern finishes offers one king bed, a spacious work station and walk-in shower..<div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="queen">
+                    <img src="images/queenFinal.jpg" class="showImageRoomSmall" alt="Queen Room">
+                    <div id="queenPic" class="hideImageSmall"></div>
+                    <div id="queenInfo">
+                        <h3>1 QUEEN BED</h3>
+                        This contemporary room with modern finishes offers one king bed, a spacious work station and walk-in shower.
+                        <div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="twin">
+                    <img src="images/Twin2.jpg" class="showImageRoomSmall">
+                    
+                    <div id="twinPic" class="hideImageSmall" alt="Twin Room"></div>
+                    <div id="twinInfo">
+                        <h3>2 TWIN BED</h3>
+                        This contemporary room with modern finishes offers one king bed, a spacious work station and walk-in shower.
+                        <div class="upSideDown">
+
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="showMedia">
+                    <h1 >Suites</h1>
+            </div>
+            <div id="allSuites">
+                <div id="masterSuite">
+                    <img src="images/master2.jpg" class="showImageRoomSmall" alt="Master Suite">
+                    <div id="masterSuitePic" class="hideImageSmall"></div>
+                    <div id="masterSuiteInfo">
+                        <h3>MASTER SUITE</h3>
+                        Enjoy panoramic views with a luxurious freestanding bath & walk in shower, including Club access and privileges. This is a premium suite. <div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Terry cloth robes and slippers</li>
+                                <li>Daily newspaper upon request</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                                <li>Crib upon request</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="miniSuite">
+                    <img src="images/mini2.jpg" class="showImageRoomSmall" alt="Mini Suite">
+                  
+                    <div id="miniSuitePic" class="hideImageSmall"></div>
+                    <div id="miniSuiteInfo">
+                        <h3>MINI SUITE</h3>
+                        Enjoy the extra space in this 50 sq m suite, with one king bedroom, a living area and work station. This is a standard suite.<div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Crib upon request</li>
+                                <li>Daily newspaper upon request</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="balconySuite">
+                    <img src="images/balcony2.jpg" class="showImageRoomSmall" alt="Balcony Suite">
+                    <div id="balconySuitePic" class="hideImageSmall"></div>
+                    <div id="balconySuiteInfo">
+                        <h3>BALCONY SUITE</h3>
+                        Enjoy the extra space in this 50 sq m suite, with one king bedroom, a living area, balcony with outstanding city views, and work station.<div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>Flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Crib upon request</li>
+                                <li>Daily newspaper upon request</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                                <li>Balcony with outstanding view</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="executiveSuite">
+                    <img src="images/executive2.jpg" class="showImageRoomSmall" alt="Executive Suite">
+                    <div id="executiveSuitePic" class="hideImageSmall"></div>
+                    <div id="executiveSuiteInfo">
+                        <h3>EXECUTIVE SUITE</h3>
+                        Enjoy the extra space in this 56 sq m suite, with one king bedroom, a separate living area and work station. This is an executive suite.<div class="upSideDown">
+                            <p class="facilities">Facilities</p>
+                            <div class="diamondUpSideDown"></div>
+
+                            <ul>
+                                <li>42” flat-screen TV with Miracast mirroring technology</li>
+                                <li>Individually controlled heat and air-conditioning</li>
+                                <li>Free High Speed Wi-Fi: iPhone Dock</li>
+                                <li>Crib upon request</li>
+                                <li>Large in-room safe</li>
+                                <li>Daily newspaper upon request</li>
+                                <li>Freestanding bath and walk in shower</li>
+                                <li>Refrigerator</li>
+                                <li>Coffeemaker and tea setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <ul class="footer1">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Careers</li></a>
+                <a href=""><li>Contact Us</li></a>
+                <a href=""><li>Travel Advisor</li></a>
+                <a href=""><li>Customer Service</li></a>
+            </ul>
+            <ul class="footer1">
+                <a href=""><li>FAQs</li></a>
+                <a href=""><li>Media Partners</li></a>
+                <a href=""><li>News</li></a>
+                <a href=""><li>Connections</li></a>
+            </ul>
+            <ul class="footer1">
+                <a href=""><li>Our Sponsors</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Developers</li></a>
+                <a href=""><li>Investors</li></a>
+                <a href=""><li>Activities</li></a>
+                <a href=""><li>Gift Card</li></a>
+            </ul>
+            <div class="footer1" id="social">
+                <h3>Join Us for More Info</h3>
+                <div id="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+            </div>
+                <h5>&copy; 2019 The Grand Solace</h5>
+            </div>
+            
+            
+        </div>
+        <div id="socialTab">
+                <h3>Join Us for More Info</h3>
+                <div id="socialTabShow">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+            </div>
+                <h5>&copy; 2019 The Grand Solace</h5>
+            </div>
+        <hr>
+        <div id="footDown">
+
+           <a href="#"> Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookies</a>
+        </div>
+    </footer>
+</body></html>

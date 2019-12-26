@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!---------------------------------------------------------------------------CREATED BY SNEH------------------------------------------------------->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay in touch with The grand solace hotel. Contact us for more details and room availablity">
+    <title>The Grand Solace : Contact Us</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+
+</head>
+
+<body class="cursor">
+
+    <header>
+
+        <div class="imgClass">
+          <nav class="wrapper2">
+                <a href="index.html" id="homeNav" class="navBarMenu">Home</a>
+                <a href="rooms.html" class="navBarMenu">Rooms & Suits</a>
+                <a href="events.html" class="navBarMenu">Events</a>
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="dining.html" class="navBarMenu">Dining</a>
+                <a href="deals.html" class="navBarMenu">Deals & Packages</a>
+                <a href="contact.html" id="contactNav" class="navBarMenu">Contact</a>
+            </nav>
+            <div class="contacthero"></div>
+
+        </div>
+
+        <div class="mediaQ">
+            <nav>
+
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suits</a>
+                <a href="events.html">Events</a>
+                <a href="dining.html">Dining</a>
+                <a href="deals.html">Deals & Packages</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="contacthero"></div>
+        </div>
+
+        <form id="fullCheckIn" action="" class="no">
+            <select id="roomType">
+                <option value="">Select Your Room</option>
+                <option value="King">King</option>
+                <option value="Queen">Queen</option>
+                <option value="Twin">Twin</option>
+                <hr>
+                <hr>
+
+                <option value="King Deluxe">King Deluxe</option>
+                <option value="Queen Deluxe">Queen Deluxe</option>
+                <option value="Twin Deluxe">Twin Deluxe</option>
+            </select>
+            <select id="adult">
+                <option value="">Adults</option>
+                <option value="oneAdult">1</option>
+                <option value="twoAdult">2</option>
+                <option value="threeAdult">3</option>
+                <option value="fourAdult">4</option>
+                <option value="fiveAdult">5</option>
+                <option value="sixAdult">6</option>
+            </select>
+            <select id="child">
+                <option value="">Children</option>
+                <option value="oneChild">1</option>
+                <option value="twoChild">2</option>
+                <option value="threeChild">3</option>
+                <option value="fourChild">4</option>
+            </select>
+            <input type="button" id="checkAvailability" value="Check Availability">
+
+        </form>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <div class="roombooking">
+                    <h1>Book Your Rooms</h1>
+
+
+                    <center>
+                        <div> <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                            <span></span>
+                            <input type="text" name="email" id="email" placeholder="Email Id">
+                            <span></span>
+                        </div>
+                        <br>
+                        <div>
+                            <label> Adult(s) :</label>
+                            <select name="adult" id="adultBook" required>
+                                <option value="">Adults</option>
+                                <option value="oneAdult">1</option>
+                                <option value="twoAdult">2</option>
+                                <option value="threeAdult">3</option>
+                                <option value="fourAdult">4</option>
+                                <option value="fiveAdult">5</option>
+                                <option value="sixAdult">6</option>
+                            </select>
+                            <label> Children :</label>
+                            <select name="child" class="childBook" required>
+                                <option value="">Children</option>
+                                <option value="oneChild">1</option>
+                                <option value="twoChild">2</option>
+                                <option value="threeChild">3</option>
+                                <option value="fourChild">4</option>
+                            </select>
+                            <label> Room Type :</label>
+                            <select name="roomtype" id="roomtypeBook" required>
+                                <option value="">Room</option>
+                                <option value="King">King</option>
+                                <option value="Queen">Queen</option>
+                                <option value="Twin">Twin</option>
+                                <hr>
+                                <hr>
+
+                                <option value="King Deluxe">King Deluxe</option>
+                                <option value="Queen Deluxe">Queen Deluxe</option>
+                                <option value="Twin Deluxe">Twin Deluxe</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="date" id="datepicker1" class="datep" placeholder="Select your check-in date">
+                            <input type="date" id="datepicker2" class="datep" placeholder="Select your check-out date">
+                        </div>
+                        <button type="submit" name="booknow" id="booknow">Book Now</button>
+                        <br>
+                        <br>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--<div class="heroblock">
+            <img src="Images/contactus.jpg">
+        </div>
+-->
+        <div class="bookRoom">
+
+
+        </div>
+        <div class="wrapper contactblock">
+            <h1>Contact Us</h1>
+            <div class="contactdetails">
+                <div class="contactinfo">
+                    <h2>Contact Details</h2>
+                    <ul>
+                        <li><b>Phone No :</b> +1 123-456-7890, +1 123-456-7899, +1 123-456-7898
+                        </li>
+                        <li><b>Email Id :</b> contactus@thegrandsolace.com, feedback@thegrandsolace.com</li>
+                        <li><b>Address:</b> <br>
+                            <span><b>The Grand solace,</b><br></span>
+                            <span>299 Doon Valley Dr,<br> </span><span>Kitchener,<br> </span><span> ON N2G 4M4<br></span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="contactinfo">
+                    <h2>Opening Hours</h2>
+                    <h2>Dining</h2>
+                    <center>
+                        <ul>
+                            <li>Monday - Friday : 10:00 AM to 11:00 PM
+                            </li>
+                            <li>Satday - Sunday : 09:00 AM to 11:00 PM</li>
+                        </ul>
+                    </center>
+                    <h2>Bar</h2>
+                    <center>
+                        <ul>
+                            <li>Monday - Friday : 11:00 AM to 12:00 AM
+                            </li>
+                            <li>Satday - Sunday : 10:00 AM to 01:30 AM</li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="contactfeedback">
+                    <h2>Feedback / Inquiry</h2>
+                    <center>
+
+                        <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                        <span></span>
+                        <input type="text" name="email" id="email" placeholder="Email Id">
+                        <span></span>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <span></span>
+                        <br>
+                        <button type="submit" name="send" id="send">Send</button>
+
+                    </center>
+                </div>
+                <div class="contactmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3824035435428!2d-80.4074837845491!3d43.389936079131225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College!5e0!3m2!1sen!2sca!4v1575578935491!5m2!1sen!2sca" height="450" frameborder="0" style="border:0;width: 100%;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <ul class="footer1">
+                <a href="">
+                    <li>About Us</li>
+                </a>
+                <a href="">
+                    <li>Careers</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+                <a href="">
+                    <li>Travel Advisor</li>
+                </a>
+                <a href="">
+                    <li>Customer Service</li>
+                </a>
+            </ul>
+            <ul class="footer1">
+                <a href="">
+                    <li>FAQs</li>
+                </a>
+                <a href="">
+                    <li>Media Partners</li>
+                </a>
+                <a href="">
+                    <li>News</li>
+                </a>
+                <a href="">
+                    <li>Connections</li>
+                </a>
+            </ul>
+            <ul class="footer1">
+                <a href="">
+                    <li>Our Sponsors</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+                <a href="">
+                    <li>Developers</li>
+                </a>
+                <a href="">
+                    <li>Investors</li>
+                </a>
+                <a href="">
+                    <li>Activities</li>
+                </a>
+                <a href="">
+                    <li>Gift Card</li>
+                </a>
+            </ul>
+            <div class="footer1" id="social">
+                <h3>Join Us for More Info</h3>
+                <div id="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+                </div>
+                <h5>&copy; 2019 The Grand Solace</h5>
+            </div>
+
+
+        </div>
+        <div id="socialTab">
+            <h3>Join Us for More Info</h3>
+            <div id="socialTabShow">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+            </div>
+            <h5>&copy; 2019 The Grand Solace</h5>
+        </div>
+        <hr>
+        <div id="footDown">
+
+            <a href="#"> Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookies</a>
+        </div>
+    </footer>
+</body></html>

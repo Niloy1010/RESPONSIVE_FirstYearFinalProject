@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!----------------CREATED BY RUCHI--------------------->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjoy your dining at The Grand Solace where we offer delicious multi-cusine dishes">
+    <title>The Grand Solace : Dining</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="imgClass">
+           <nav class="wrapper2">
+                <a href="index.html" id="homeNav" class="navBarMenu">Home</a>
+                <a href="rooms.html" class="navBarMenu">Rooms & Suits</a>
+                <a href="events.html" class="navBarMenu">Events</a>
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="dining.html" class="navBarMenu">Dining</a>
+                <a href="deals.html" class="navBarMenu">Deals & Packages</a>
+                <a href="contact.html" id="contactNav" class="navBarMenu">Contact</a>
+            </nav>
+            <div class="dininghero"></div>
+
+        </div>
+
+        <div class="mediaQ">
+           <nav>
+
+                <a href="index.html" class="logo"><img src="images/logo11.png" width="150px"></a>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suits</a>
+                <a href="events.html">Events</a>
+                <a href="dining.html">Dining</a>
+                <a href="deals.html">Deals & Packages</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="dininghero"></div>
+        </div>
+
+        <form id="fullCheckIn" action="" class="no">
+            <select id="roomType">
+                <option value="">Select Your Room</option>
+                <option value="King">King</option>
+                <option value="Queen">Queen</option>
+                <option value="Twin">Twin</option>
+                <hr>
+                <hr>
+
+                <option value="King Deluxe">King Deluxe</option>
+                <option value="Queen Deluxe">Queen Deluxe</option>
+                <option value="Twin Deluxe">Twin Deluxe</option>
+            </select>
+            <select id="adult">
+                <option value="">Adults</option>
+                <option value="oneAdult">1</option>
+                <option value="twoAdult">2</option>
+                <option value="threeAdult">3</option>
+                <option value="fourAdult">4</option>
+                <option value="fiveAdult">5</option>
+                <option value="sixAdult">6</option>
+            </select>
+            <select id="child">
+                <option value="">Children</option>
+                <option value="oneChild">1</option>
+                <option value="twoChild">2</option>
+                <option value="threeChild">3</option>
+                <option value="fourChild">4</option>
+            </select>
+            <input type="button" id="checkAvailability" value="Check Availability">
+
+        </form>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <div class="roombooking">
+                    <h1>Book Your Rooms</h1>
+
+
+                    <center>
+                        <div> <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                            <span></span>
+                            <input type="text" name="email" id="email" placeholder="Email Id">
+                            <span></span>
+                        </div>
+                        <br>
+                        <div>
+                            <label> Adult(s) :</label>
+                            <select name="adult" id="adultBook" required>
+                                <option value="">Adults</option>
+                                <option value="oneAdult">1</option>
+                                <option value="twoAdult">2</option>
+                                <option value="threeAdult">3</option>
+                                <option value="fourAdult">4</option>
+                                <option value="fiveAdult">5</option>
+                                <option value="sixAdult">6</option>
+                            </select>
+                            <label> Children :</label>
+                            <select name="child" class="childBook" required>
+                                <option value="">Children</option>
+                                <option value="oneChild">1</option>
+                                <option value="twoChild">2</option>
+                                <option value="threeChild">3</option>
+                                <option value="fourChild">4</option>
+                            </select>
+                            <label> Room Type :</label>
+                            <select name="roomtype" id="roomtypeBook" required>
+                                <option value="">Room</option>
+                                <option value="King">King</option>
+                                <option value="Queen">Queen</option>
+                                <option value="Twin">Twin</option>
+                                <hr>
+                                <hr>
+
+                                <option value="King Deluxe">King Deluxe</option>
+                                <option value="Queen Deluxe">Queen Deluxe</option>
+                                <option value="Twin Deluxe">Twin Deluxe</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="date" id="datepicker1" class="datep" placeholder="Select your check-in date">
+                            <input type="date" id="datepicker2" class="datep" placeholder="Select your check-out date">
+                        </div>
+                        <button type="submit" name="booknow" id="booknow">Book Now</button>
+                        <br>
+                        <br>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--    <div id="heroimgevent"></div>-->
+
+    <div class="wrapper">
+        <div id="diningtext">
+            <div id="diningHeading">Dining</div>
+            <div id="diningDetails">Dining at The Grand Solace is an experience in itself. World-class chefs and sommeliers use locally sourced ingredients to craft one-of-a-kind menus and wine pairings. Their talents and personal style, infused with timeless flavors, express the art of dining.</div>
+        </div>
+
+        <div class="oneDining">
+            <!--            <div id="oneleft"></div>-->
+            <div class="container">
+                <img src="images/breakfast.jpg" alt="Breakfast" class="imageEvent123">
+                <div class="overlay">
+                    <div class="text">All happiness depends on leisurely breakfast</div>
+                </div>
+            </div>
+
+            <div id="onerightDining">
+                <p id="paratextDining">Breakfast</p>
+                <p id="paratextDetailDining">Breakfast Time:<br>Morning 8 AM to 11 AM <br>Contact Us: +1 434-434-4321</p>
+                <p id="paradetails" style="text-align: left">
+                </p>
+            </div>
+
+        </div>
+
+        <div class="twoDining">
+            <div id="twoleftDining">
+                <p id="paratextDining"> Dining </p>
+                <p id="paratextDetailDining">Dining Time:<br>Afternoon 12 PM to 3 PM <br> Evening 7 PM to 11 PM <br>Contact Us: +1 434-434-4321</p>
+                <p id="paradetails" style="text-align: left">
+                </p>
+            </div>
+
+            <!--            <div id="tworight">-->
+
+            <div class="container">
+                <img src="images/christmas_dining.jpg" alt="dining" class="imageEvent123">
+                <div class="overlay">
+                    <div class="text">Enjoy meal with your friends & family and experience the elegance of THE GRAND SOLACE Dining</div>
+                </div>
+            </div>
+        </div>
+        <div id="customize">
+            Customize your Dining
+            <div id="customizeDiv">
+                <p id="paratextDetailCustomise">Its your day! Choose your own dining theme and tell our organiser about your plans of the day. We will help you turn your day into the most memorable day with your own style.Personal Preference Menus offer made-to-order meals for groups of any size.<br><span id="spancust">Contact our planner NOW! <br> Ph. +1 533 321 6743 <br> Mail: customizedinner@thegrandsolace.com</span> </p>
+                <div class="containerfade">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="images/cutomiseplanner.jpg">
+                        <div class="content-details fadeIn-top">
+                            <h3>ENJOY THE BENEFITS WHEN YOU PLAN WITH THE GRAND SOLACE</h3>
+                            <p>~..Hire the Professionals Now..~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tableText">The Grand Solace is a Multi-Cuisine Hotel. Our Top Picks!</div>
+
+        <div id="tableMenu">
+            <div id="tableOne">
+                <table>
+                    <caption>Sides & Appetizers</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Description</th>
+                            <th>Price</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-column="Dish">Roti</td>
+                            <td data-column="Description">Indian style flatbread</td>
+                            <td data-column="Price">$2.00 for one - $ 5.00 for three</td>
+
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Momos</td>
+                            <td data-column="Description">Steamed dumplings with sesame dipping sauce.</td>
+                            <td data-column="Price">$9.00 for Ten</td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Spinach Dip</td>
+                            <td data-column="Description">Creamy dip made of yogurt. Mixed with spinach and served with naan bread.</td>
+                            <td data-column="Price">$10.00</td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Nachos</td>
+                            <td data-column="Description">Tortilla chips topped with melted cheese and peppers</td>
+                            <td data-column="Price">$11.50</td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Curry Fries</td>
+                            <td data-column="Description">French fries, topped with curry sauce</td>
+                            <td data-column="Price">$3.50 Small <br> $4.00 Large</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tableTwo">
+
+                <table>
+                    <caption>Main Dishes</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Description</th>
+                            <th>Price</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-column="Dish">Falafel</td>
+                            <td data-column="Description">Deep fried dough balls</td>
+                            <td data-column="Price">$9.00</td>
+
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Fish & Chips</td>
+                            <td data-column="Description">Battered deep fried Cod fillet.</td>
+                            <td data-column="Price">$16.00 for one & 18.00 for Two </td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Steak Dinner</td>
+                            <td data-column="Description">Eight-ounce Striploin AAA steak grilled</td>
+                            <td data-column="Price">$25.00</td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Chicken Stir Fry</td>
+                            <td data-column="Description">Stir fried with garlic, ginger and spices</td>
+                            <td data-column="Price">$14.00</td>
+                        </tr>
+                        <tr>
+                            <td data-column="Dish">Bacon Pesto Chicken</td>
+                            <td data-column="Description">Baked boneless chicken stuffed with cheese and bacon, topped with pesto sauce.</td>
+                            <td data-column="Price">$2.00 for one - $ 5.00 for three</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <ul class="footer1">
+            <a href="">
+                <li>About Us</li>
+            </a>
+            <a href="">
+                <li>Careers</li>
+            </a>
+            <a href="">
+                <li>Contact Us</li>
+            </a>
+            <a href="">
+                <li>Travel Advisor</li>
+            </a>
+            <a href="">
+                <li>Customer Service</li>
+            </a>
+        </ul>
+        <ul class="footer1">
+            <a href="">
+                <li>FAQs</li>
+            </a>
+            <a href="">
+                <li>Media Partners</li>
+            </a>
+            <a href="">
+                <li>News</li>
+            </a>
+            <a href="">
+                <li>Connections</li>
+            </a>
+        </ul>
+        <ul class="footer1">
+            <a href="">
+                <li>Our Sponsors</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+            <a href="">
+                <li>Developers</li>
+            </a>
+            <a href="">
+                <li>Investors</li>
+            </a>
+            <a href="">
+                <li>Activities</li>
+            </a>
+            <a href="">
+                <li>Gift Card</li>
+            </a>
+        </ul>
+        <div class="footer1" id="social">
+            <h3>Join Us for More Info</h3>
+            <div id="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+            </div>
+            <h5>&copy; 2019 The Grand Solace</h5>
+        </div>
+
+
+    </div>
+    <div id="socialTab">
+        <h3>Join Us for More Info</h3>
+        <div id="socialTabShow">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="50px" width="50px"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" height="48px" width="48px"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" height="50px" width="50px"></a>
+
+
+        </div>
+        <h5>&copy; 2019 The Grand Solace</h5>
+    </div>
+    <hr>
+    <div id="footDown">
+
+        <a href="#"> Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookies</a>
+    </div>
+</footer></html>

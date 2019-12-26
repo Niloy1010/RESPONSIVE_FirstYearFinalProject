@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>The Royal Solace</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="javascript/index.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker1").datepicker({
+                minDate: 0
+            });
+            $("#datepicker2").datepicker({
+                minDate: 0
+            });
+        });
+    </script>
+</head>
+
+<body class="cursor">
+
+    <header>
+        <div class="top">
+            <div class="logoName">
+                <div class="logo">
+                </div>
+                <div class="name">
+                </div>
+            </div>
+            <div class="langSignReserve">
+                <div class="lang">
+                    <h4>English</h4>
+                </div>
+                <div class="sign">
+                    <h4>Sign In</h4>
+                </div>
+                <div class="reserve">
+                    <h4>Reserve Now</h4>
+                </div>
+            </div>
+
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms & Suits</a>
+            <a href="#">Deals & Packages</a>
+            <a href="#">Dining</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact & Hours</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-----------MODAL--------------------------------->
+
+
+<!-- Trigger/Open The Modal -->
+
+        
+        
+        
+        
+        
+        
+        <div class="heroblock">
+
+        </div>
+        <div id="wrapper">
+            <div class="roombooking">
+                <h1>Book Your Rooms</h1>
+
+
+                <center>
+                    <div> <input type="text" name="fullname" id=fullname placeholder="Full Name">
+                        <span></span>
+                        <input type="text" name="email" id="email" placeholder="Email Id">
+                        <span></span>
+                    </div>
+                    <br>
+                    <div>
+                        <label> Adult(s) :</label>
+                        <select name="adult" id="adultBook">
+                            <option value="">Adults</option>
+                            <option value="oneAdult">1</option>
+                            <option value="twoAdult">2</option>
+                            <option value="threeAdult">3</option>
+                            <option value="fourAdult">4</option>
+                            <option value="fiveAdult">5</option>
+                            <option value="sixAdult">6</option>
+                        </select>
+                        <label> Children :</label>
+                        <select name="child" id="childBook">
+                            <option value="">Children</option>
+                            <option value="oneChild">1</option>
+                            <option value="twoChild">2</option>
+                            <option value="threeChild">3</option>
+                            <option value="fourChild">4</option>
+                        </select>
+                        <label> Room Type :</label>
+                        <select name="roomtype" id="roomtypeBook">
+                            <option value="">Room</option>
+                            <option value="King">King</option>
+                            <option value="Queen">Queen</option>
+                            <option value="Twin">Twin</option>
+                            <hr>
+                            <hr>
+
+                            <option value="King Deluxe">King Deluxe</option>
+                            <option value="Queen Deluxe">Queen Deluxe</option>
+                            <option value="Twin Deluxe">Twin Deluxe</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="text" id="datepicker1" class="datep" placeholder="Select your check-in date">
+                        <input type="text" id="datepicker2" class="datep" placeholder="Select your check-out date">
+                    </div>
+                    <button type="submit" name="send" id="send">Send</button>
+                    <br>
+                    <br>
+                </center>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body></html>
